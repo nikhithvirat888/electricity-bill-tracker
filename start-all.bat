@@ -4,8 +4,8 @@ echo ========================================================
 echo Launching Electricity Bill & Usage Tracker...
 echo ========================================================
 
-start "Backend Server (Spring Boot)" cmd /k "cd /d %~dp0electricity-bill-tracker\server && mvn spring-boot:run"
-start "Frontend App (React Vite)" cmd /k "cd /d %~dp0electricity-bill-tracker\client && npm run dev"
+start "Backend Server (Spring Boot)" cmd /k "cd /d %~dp0server && mvn spring-boot:run"
+start "Frontend App (React Vite)" cmd /k "cd /d %~dp0client && npm run dev"
 
 echo.
 echo Both servers have been launched in separate windows!
